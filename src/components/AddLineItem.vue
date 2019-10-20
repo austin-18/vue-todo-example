@@ -1,17 +1,18 @@
 <template>
     <div>
-        <form @submit.prevent="addLineItem"> <!--- .prevent on @submit to prevent page reloading and submitting info to file 
-            @submit will also execute the addLineItem method --->
+        <form @submit.prevent="addLineItem"> 
+            <!--- ".prevent" on @submit to prevent page reloading and submitting info to file 
+                @submit will also execute the addLineItem method --->
             <!--- text input field uses v-model to tie the input to the data variable "text" --->
             <input type="text" v-model="title" name="title" placeholder="Add Todo" >
-            <!--- submit button will  --->
+            <!--- Submit button --->
             <input type="submit" value="Submit" class="btn">
         </form>
     </div>
 </template>
 
 <script>
-//import uuid from 'uuid'; //inporting UUID library for creating unique ids
+//import uuid from 'uuid'; //inporting UUID library for creating unique ids -- not needed with API
 
 export default {
     name: "AddLineItem",

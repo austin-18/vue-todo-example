@@ -20,7 +20,7 @@ export default {
     components: {
         LineItem
     },
-    props:{ //prop opject that is binded to the data object "LineItemList" in parent
+    props:{ //prop opject that is binded to the data object "LineItemList" array in parent component Home.vue
         propLineItemList: Array
     }
     

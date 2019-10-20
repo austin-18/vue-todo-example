@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <h1>Todo List</h1>
-        <div id='nav'>
+        <div id='nav'> <!--- <router-link> elements link enclosed text to the routed path in router.js --->
             <router-link to="/"> Home </router-link> | <router-link to="/about"> About </router-link>
         </div>
     </header>
