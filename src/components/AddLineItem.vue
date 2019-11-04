@@ -1,11 +1,11 @@
 <template>
     <div>
         <form @submit.prevent="addLineItem"> 
-            <!--- ".prevent" on @submit to prevent page reloading and submitting info to file 
-                @submit will also execute the addLineItem method --->
-            <!--- text input field uses v-model to tie the input to the data variable "text" --->
+            <!-- ".prevent" on @submit to prevent page reloading and submitting info to file 
+                @submit will also execute the addLineItem method -->
+            <!-- text input field uses v-model to tie the input to the data variable "text" -->
             <input type="text" v-model="title" name="title" placeholder="Add Todo" >
-            <!--- Submit button --->
+            <!-- Submit button -->
             <input type="submit" value="Submit" class="btn">
         </form>
     </div>
